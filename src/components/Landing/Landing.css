@@ -1,0 +1,126 @@
+.Landing video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    object-fit: cover;
+}
+
+.Container_Landing{
+display: flex;
+align-items: center;
+justify-content: space-evenly;
+width: 100%;
+height: calc(100vh - 60px);
+}
+
+.Container_Landing .Left_Landing{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 45%;
+    height: 100%;
+    text-align: center;
+}
+
+.Container_Landing .Rigth_Landing {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 45%;
+    height: 100%;
+    position: relative;
+}
+
+.Rigth_Landing img {
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    transform: translate(-50%);
+    z-index: -1;
+    filter: drop-shadow(0px 0px 30px rgb(210, 210, 210))
+   
+}
+
+.Rigth_Landing:hover .cubo {
+    transform: scale(1.1);
+    /* Ajusta el valor según el tamaño que deseas aumentar */
+}
+
+
+/* CUBO GIRATORIO */
+
+
+.cubo{
+     position: absolute;
+}
+
+.cubo,
+.cubo div {
+    transform-style: preserve-3d;
+    width: 80px;
+    height: 80px;
+}
+
+.arriba,
+.arriba::before,
+.cubo {
+    width: 80px;
+    height: 80px;
+}
+
+.cubo {
+    position: relative;
+    animation: 8s linear infinite animate;
+}
+
+.arriba,
+.arriba::before,
+.cubo div,
+.cubo div span {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+@keyframes animate {
+    0% {
+        transform: rotateX(-30deg) rotateY(0);
+    }
+
+    100% {
+        transform: rotateX(-30deg) rotateY(360deg);
+    }
+}
+
+.cubo div {
+    width: 100%;
+    height: 100%;
+}
+
+.cubo div span {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(#c2c2c2, #fdfdfd);
+    transform: rotateY(calc(90deg * var(--i))) translateZ(40px);
+}
+
+.arriba {
+    background: rgba(171, 171, 171, 0.836);
+    transform: rotateX(90deg) translateZ(40px);
+}
+
+/* .arriba::before {
+    content: "";
+    background: rgba(74, 74, 74, 0.2);
+    transform: translateZ(-160px);
+    filter: blur(4.2px);
+    box-shadow: 0 0 24px rgba(255, 255, 255, 0.342),
+        0 0 40px rgba(255, 255, 255, 0.2),
+        0 0 60px rgba(255, 255, 255, 0.2),
+        0 0 80px rgba(255, 255, 255, 0.2),
+        0 0 100px rgba(255, 255, 255, 0.2);
+} */

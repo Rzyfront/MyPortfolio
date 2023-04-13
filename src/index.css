@@ -1,0 +1,38 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+
+@font-face {
+    font-family: 'Rzy_RM';
+    src: local('Real Madrid 1920 Regular'), local('Real-Madrid-1920-Regular'),
+        url('./assets/RealMadrid1920Regular.woff2') format('woff2'),
+        url('./assets/RealMadrid1920Regular.woff') format('woff'),
+        url('./assets/RealMadrid1920Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+  }
+
+:root {
+
+    /* Color group */
+    --main:rgb(255, 255, 255);
+    --primary:rgb(23, 24, 41);
+    --secondary:rgb(26, 74, 172);
+    --tertiary:rgb(254, 190, 16);
+    --main-smoth:rgba(249, 249, 249, 0.412);
+
+    /* Fonts group */
+    --title: 'Rzy_RM', sans-serif;
+    --text: 'Philosopher', sans-serif;
+
+}
+
+
+body{
+  background-color: var(--main);
+}
