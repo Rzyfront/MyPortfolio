@@ -21,10 +21,10 @@
 
     /* Color group */
     --main:rgb(255, 255, 255);
-    --primary:rgb(23, 24, 41);
-    --secondary:rgb(26, 74, 172);
+    --primary:rgb(42, 43, 46);
+    --secondary:rgb(0, 102, 255);
     --tertiary:rgb(254, 190, 16);
-    --main-smoth:rgba(249, 249, 249, 0.412);
+    --main-smoth:rgba(140, 122, 107, 0.412);
 
     /* Fonts group */
     --title: 'Rzy_RM', sans-serif;
@@ -35,4 +35,31 @@
 
 body{
   background-color: var(--main);
+}
+
+@keyframes example {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+.animated-element {
+  animation: example 2s;
+}
+
+@keyframes example2 {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.animated-element2 {
+  animation: example2 10s;
 }
