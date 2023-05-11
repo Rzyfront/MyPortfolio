@@ -15,6 +15,10 @@ function Navbar() {
           <div className={style.Circle}></div>
         </a>
         <a className={style.Links}>
+          <span className={style.Noselect}>About me</span>
+          <div className={style.Circle}></div>
+        </a>
+        <a className={style.Links}>
           <span className={style.Noselect}>Proyects</span>
           <div className={style.Circle}></div>
         </a>
@@ -28,10 +32,6 @@ function Navbar() {
         </a>
         <a className={style.Links}>
           <span className={style.Noselect}>Contact me</span>
-          <div className={style.Circle}></div>
-        </a>
-        <a className={style.Links}>
-          <span className={style.Noselect}>About</span>
           <div className={style.Circle}></div>
         </a>
       </div>

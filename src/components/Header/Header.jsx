@@ -7,7 +7,7 @@ function Header() {
 
     useEffect(() => {
     const title = new Typed(tl.current, {
-      strings: ["I'm <span>Rafael</span>"],
+      strings: ["I<span>'</span>m Rafael"],
       typeSpeed: 120,
       cursorChar: '_',
         shuffle: true,
@@ -16,7 +16,7 @@ function Header() {
     });
 
     const text = new Typed(tx.current, {
-      strings: [" <span>Full Stack</span> developer"],
+      strings: [" <span>Full Stack</span> Developer"],
       typeSpeed: 0,
         shuffle: true,
         cursorChar: '',
@@ -40,10 +40,10 @@ function Header() {
         
         <p ref={tx} className={style.Text}></p>
 
-        <div className={style.Btn}>
+        <a href='#AboutMe' className={style.Btn}>
             <span className={style.Noselect}>Know me</span>
             <div className={style.Circle}></div>
-        </div>
+        </a>
         </div>
     </div>
   )

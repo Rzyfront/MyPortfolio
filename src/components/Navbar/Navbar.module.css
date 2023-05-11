@@ -6,6 +6,11 @@
     height: 60px;
     padding: 0 20px 0 20px;
     transition: 0.5s;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
 }
 
 .Navbar:hover {
@@ -26,7 +31,7 @@
     transition: 0.3s;
 }
 
-.Name:hover {
+.Navbar:hover .Name {
     padding-right: 15px;
     border-bottom: 1px inset var(--yellow);
     border-radius: 0 0 5px 0;

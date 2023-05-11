@@ -1,6 +1,6 @@
 .Container{
     width: 100%;
-    height: calc(100vh - 60px);
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -15,6 +15,10 @@
 .Titlediv{
     display: flex;
     align-items: center;
+}
+
+.Titlediv span{
+   color: var(--blue);
 }
 
 .Title{
@@ -46,6 +50,8 @@
     align-items: center;
     justify-content: center;
     cursor: pointer;
+    text-decoration: none;
+    outline: none;
 }
 
 .Circle {

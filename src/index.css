@@ -2,6 +2,8 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
+  scroll-snap-type: proximity;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&display=swap');
@@ -59,4 +61,108 @@ body{
   font-family: var(--text);
   font-weight: 200;
   color: var(--ligth);
+}
+
+
+
+
+/* scroll aprariece */
+
+/* Webkit (Chrome, Safari, Opera) */
+::-webkit-scrollbar {
+  width: 8px;
+  background-color: var(--hover);
+  border-radius: 15px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #222;
+  border-radius: 15px;
+}
+
+/* Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #222 var(--hover);
+}
+
+*::-webkit-scrollbar {
+  width: 10px;
+  background-color: var(--hover);
+  border-radius: 15px;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #222;
+  border-radius: 15px;
+}
+
+*::-moz-scrollbar {
+  width: 8px;
+  background-color: var(--hover);
+  border: 0;
+  border-radius: 15px;
+  border-image:
+    linear-gradient(to bottom, var(--hover), #222) 1 100%;
+}
+
+*::-moz-scrollbar-thumb {
+  background-color: #222;
+  border-radius: 15px;
+}
+
+/* Webkit (Chrome, Safari, Opera) */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 3px;
+  /* Ajustar la altura para que coincida con el ancho */
+  background-color: var(--hover);
+  border-radius: 15px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #222;
+  border-radius: 15px;
+}
+
+/* Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #222 var(--hover);
+}
+
+*::-webkit-scrollbar {
+  width: 5px;
+  height: 3px;
+  /* Ajustar la altura para que coincida con el ancho */
+  background-color: var(--hover);
+  border-radius: 15px;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #222;
+  border-radius: 15px;
+}
+
+*::-moz-scrollbar {
+  width: 5px;
+  height: 3px;
+  /* Ajustar la altura para que coincida con el ancho */
+  background-color: var(--hover);
+  border: 0;
+  border-radius: 15px;
+  border-image:
+    linear-gradient(to right, var(--hover), #222) 1 100%;
+  /* Cambiar la dirección del gradiente */
+}
+
+*::-moz-scrollbar-thumb {
+  background-color: #222;
+  border-radius: 15px;
+}
+
+input[type=number]::-webkit-outer-spin-button,
+input[type=number]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }
