@@ -54,14 +54,16 @@
 .Text-AboutMe{
     font-size: 1.2rem;
     font-family: var(--text);
-    color: rgb(34, 34, 37);
+    color: var(--ligth);
     font-weight: 400;
     letter-spacing: 2px;
-    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.486);
+    /* text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.486); 
+    rgb(34, 34, 37)*/
 }
 
 .Text-AboutMe span {
     transition: 0.4s;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.486);
 }
 
 .AboutInfo:hover .Text-AboutMe span {
