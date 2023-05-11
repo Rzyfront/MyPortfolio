@@ -75,7 +75,7 @@
 }
 
 .Btn:hover {
-    background: rgb(67, 68, 70);;
+    background: var(--hover);
 }
 
 .Btn:hover .Circle {
