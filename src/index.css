@@ -7,28 +7,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
 
-@font-face {
-    font-family: 'Rzy_RM';
-    src: local('Real Madrid 1920 Regular'), local('Real-Madrid-1920-Regular'),
-        url('./assets/RealMadrid1920Regular.woff2') format('woff2'),
-        url('./assets/RealMadrid1920Regular.woff') format('woff'),
-        url('./assets/RealMadrid1920Regular.ttf') format('truetype');
-    font-weight: 400;
-    font-style: normal;
-  }
-
 :root {
 
     /* Color group */
-    --main:rgb(255, 255, 255);
-    --primary:rgb(42, 43, 46);
-    --secondary:rgb(0, 102, 255);
-    --tertiary:rgb(254, 190, 16);
-    --main-smoth:rgba(140, 122, 107, 0.412);
+    --ligth:rgb(255, 255, 255);
+    --dark:rgb(42, 43, 46);
+    --blue:rgb(0, 102, 255);
+    --yellow:rgb(254, 190, 16);
 
-    /* Fonts group */
-    --title: 'Rzy_RM', sans-serif;
-    --text: 'Philosopher', sans-serif;
+    --text: 'Dosis', sans-serif;
 
 }
 
@@ -62,4 +49,13 @@ body{
 
 .animated-element2 {
   animation: example2 10s;
+}
+
+.typed-cursor {
+  justify-self: end;
+  padding-top: 5px;
+  font-size: 3rem;
+  font-family: var(--text);
+  font-weight: 200;
+  color: var(--ligth);
 }
