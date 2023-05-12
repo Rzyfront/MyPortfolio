@@ -50,9 +50,6 @@ body{
   }
 }
 
-.animated-element2 {
-  animation: example2 10s;
-}
 
 .typed-cursor {
   justify-self: end;

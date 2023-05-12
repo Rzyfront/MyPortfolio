@@ -1,5 +1,5 @@
 import react from "react";
-import { Header,Navbar,AboutMe,AnimatedContainer } from "./components/components"
+import { Header,Navbar,AboutMe,AnimatedContainer,Projects,Studies,Skills,Experience,ContactMe } from "./components/components"
 
 import "./App.css";
 
@@ -13,6 +13,22 @@ function App() {
     <AnimatedContainer>
       <AboutMe/>
     </AnimatedContainer>
+    <AnimatedContainer>
+      <Projects/>
+    </AnimatedContainer>
+      <AnimatedContainer>
+      <Studies/>
+    </AnimatedContainer>
+    <AnimatedContainer>
+      <Skills/>
+    </AnimatedContainer>
+    <AnimatedContainer>
+      <Experience/>
+    </AnimatedContainer>
+      <AnimatedContainer>
+      <ContactMe/>
+    </AnimatedContainer>
+    
     </div>
  
   );

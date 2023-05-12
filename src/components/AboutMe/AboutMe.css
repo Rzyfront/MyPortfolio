@@ -48,7 +48,7 @@
     font-family: var(--text);
     color: var(--ligth);
     font-weight: 300;
-    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.486);
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.486);
 }
 
 .Text-AboutMe{
@@ -100,6 +100,10 @@ animation: slide-right 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 .fade-in .Container-AboutMe .Info-AboutMe .AboutImg .Img-About {
     -webkit-animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
         animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+
+.fade-in .Container-AboutMe .Info-AboutMe .AboutInfo .Text-AboutMe {
+    animation: example 3s;
 }
  
 
