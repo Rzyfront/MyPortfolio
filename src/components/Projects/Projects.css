@@ -1,6 +1,5 @@
 .Container-Proyects{
     width: 100%;
-    height: 100vh;
     position: relative;
     padding-top: 60px;
     display: flex;
@@ -11,7 +10,7 @@
 
 .Title-Projects{
     position: absolute;
-    height: 10%;
+    height: 30px;
     width: 100%;
     font-size: 3rem;
     font-family: var(--text);
@@ -29,20 +28,24 @@
     align-items: center;
     justify-content: space-around;
     width: 100%;
-    height: calc(100% - 60px);
-    padding-bottom: 20px;
+    min-height: calc(100vh - 60px);
+    max-height: fit-content ;
+    flex-wrap: wrap;
+    gap: 35px;
+    margin-top: 90px;
+    padding-bottom: 100px;
 }
 
 .Card-Projects-Box .Card-Project{
     width: 350px;
-    height: 90%;
+    height: 450px;
     transition: 0.3s;
     display: none;
 }
 
 .Card-Projects-Box .Card-Project:hover {
     transform: scale(1.02);
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 2px 6px;
+box-shadow: rgba(6, 6, 13, 0.31) 0px 2px 5px -1px, rgba(0, 0, 0, 0.245) 0px 1px 3px -1px;
 }
 
 .Card-Project .Cont-Img{
@@ -70,14 +73,51 @@
     align-items: flex-start;
     justify-content: center;
     flex-direction: column;
-    gap: 6%;
+    gap: 5%;
     transition: 0.3s;
 }
 
+.Card-Project .Cont-Info .Card-Title {
+    font-size: 1.5rem;
+    font-family: var(--text);
+    font-weight: 400;
+    border-bottom: 1px inset transparent;
+    border-radius: 0 0 10px 0;
+    color:var(--ligth);
+    height: 15%;
+    width: fit-content;
+    overflow: hidden;
+}
+
+.Card-Project:hover .Cont-Info .Card-Title {
+    border-bottom: 1px inset var(--yellow);
+    border-radius: 0 0 10px 0;    
+}
+
+.Card-Project .Cont-Info .Card-Text {
+    font-size: 1rem;
+    font-family: var(--text);
+    font-weight: 100;
+    color: var(--ligth);
+    height: 55%;
+    width: 100%;
+    overflow: hidden;
+}
+
+.Card-Project .Cont-Info .Card-link {
+    font-size: 0.8rem;
+    font-family: var(--text);
+    font-weight: 200;
+    color: var(--yellow);
+    height: 15%;
+    width: 100%;
+    overflow: hidden;
+}
 .Card-Projects-Box .Card-Project:hover .Cont-Info{
    padding: 0px 10px;
 
 }
+
 
 
 
@@ -94,16 +134,25 @@
 }
 
 .fade-in .Container-Proyects .Card-Projects-Box .c1 {
-animation: example 5s;
+animation: example 3s;
 display: block;
 }
 .fade-in .Container-Proyects .Card-Projects-Box .c2 {
-    animation: example 2s;
+    animation: example 1s;
     display: block;
 }
 .fade-in .Container-Proyects .Card-Projects-Box .c3 {
-animation: example 7s;
+animation: example 4s;
 display: block;
+}
+.fade-in .Container-Proyects .Card-Projects-Box .c4 {
+    animation: example 2s;
+    display: block;
+}
+
+.fade-in .Container-Proyects .Card-Projects-Box .c5 {
+    animation: example 3s;
+    display: block;
 }
 
 /* ----------------------------------------------
@@ -128,7 +177,7 @@ display: block;
 
     100% {
         opacity: 1;
-        top: 60px;
+        top: 75px;
         /* -webkit-transform: translateY(-440%);
         transform: translateY(-440%); */
     }
@@ -144,7 +193,7 @@ display: block;
 
     100% {
         opacity: 1;
-        top: 60px;
+        top: 75px;
         /* -webkit-transform: translateY(-440%);
         transform: translateY(-440%); */
     }
