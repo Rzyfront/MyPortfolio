@@ -2,7 +2,7 @@ import React from 'react'
 import './ContactMe.css'
 function ContactMe() {
   return (
-    <div className='Container-ContactMe'>HOLIS SOY EL CONTACTME</div>
+    <div id='Contact' className='Container-ContactMe'>HOLIS SOY EL CONTACTME</div>
   )
 }
 

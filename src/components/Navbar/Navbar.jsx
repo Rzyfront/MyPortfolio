@@ -22,15 +22,15 @@ function Navbar() {
           <span className={style.Noselect}>Projects</span>
           <div className={style.Circle}></div>
         </a>
-        <a className={style.Links}>
+        <a href='#Studies' className={style.Links}>
           <span className={style.Noselect}>Studies</span>
           <div className={style.Circle}></div>
         </a>
-         <a className={style.Links}>
+         <a href='#WExp' className={style.Links}>
           <span className={style.Noselect}>Work experience</span>
           <div className={style.Circle}></div>
         </a>
-        <a className={style.Links}>
+        <a href='#Contact' className={style.Links}>
           <span className={style.Noselect}>Contact me</span>
           <div className={style.Circle}></div>
         </a>

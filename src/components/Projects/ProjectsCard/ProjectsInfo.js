@@ -23,7 +23,7 @@ export const Info = [
     name: 'Nexus App',
     img: [NexusLanding, NexusHome, NexusDetail, NexusFrom],
     description:
-      'Nexus es una aplicación que consume la API de <a href="https://rawg.io/">Rawg.io</a>, la cual contiene más de 500.000 juegos de todas las consolas. Esta aplicación permite ver sus especificaciones y detalles. Además, Nexus provee una base de datos para agregar juegos a una biblioteca propia...',
+      'Nexus is an application that consumes the API from <a href="https://rawg.io/">Rawg.io</a>, which contains over 500,000 games from all consoles. This application allows you to view their specifications and details. Additionally, Nexus provides a database to add games to your own library...',
     url: 'https://nexus-pi-app.vercel.app/'
   },
   {
@@ -39,7 +39,7 @@ export const Info = [
       BaitReviewList
     ],
     description:
-      'Bait es una aplicación desarrollada para una empresa argentina que busca posicionarse en el mercado nacional como una app de recomendación y reseñas de locales gastronómicos. Fui responsable del frontend de esta app, dándole una apariencia y uso rápido y sencillo. Cabe aclarar que este enlace es demostrativo y no es el enlace de uso comercial de la app...',
+      'Bait is an application developed for an Argentinian company that aims to position itself in the national market as an app for recommending and reviewing gastronomic establishments. I was responsible for the frontend of this app, giving it a fast and user-friendly interface. Please note that this link is for demonstration purposes and not the commercial link for the app...',
     url: 'https://bait-one.vercel.app/'
   },
   {
@@ -47,7 +47,7 @@ export const Info = [
     name: 'Weather App',
     img: [WeatherApp],
     description:
-      'Weather App es una web que te permite conocer el clima de cualquier ciudad en el mundo. Esto se logra gracias a la API de <a href="https://openweathermap.org/">openweathermap.org</a>, la cual nos brinda esta información en tiempo real...',
+      'Weather App is a website that allows you to check the weather of any city in the world. This is made possible thanks to the API from <a href="https://openweathermap.org/">openweathermap.org</a>, which provides us with real-time weather information...',
     url: 'https://weather-app-wine-rho.vercel.app/'
   },
   {
@@ -55,15 +55,15 @@ export const Info = [
     name: 'Gif Creator',
     img: [GifGen],
     description:
-      'Gif Generator te permite generar gifs según la palabra clave de búsqueda. Esto se logra gracias a la API de <a href="https://giphy.com/">giphy.com</a>, que cuenta con una gran variedad de gifs en su base de datos...',
-    url: 'https://git-creator.vercel.app/'
+      'Gif Generator allows you to generate gifs based on your search keyword. This is achieved thanks to the API from <a href="https://giphy.com/">giphy.com</a>, which offers a wide variety of gifs in its database...',
+    url: 'https://gif-creator.vercel.app/'
   },
   {
     id: 5,
     name: '4Game',
     img: [Game],
     description:
-      '4Game es el popular juego de la tabla donde los jugadores deberán tratar de encadenar 4 fichas del mismo color para ganar. Está diseñado para alternar los turnos y actualmente funciona sin conexión a internet. Espero actualizarlo pronto para que se pueda jugar en línea...',
+      '4Game is the popular board game where players try to connect 4 tokens of the same color to win. It is designed to take turns and currently works offline. I hope to update it soon to enable online play...',
     url: 'https://game4-rho.vercel.app/'
   }
 ];
