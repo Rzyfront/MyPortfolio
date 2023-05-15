@@ -39,6 +39,7 @@
 
 .Options{
     display: flex;
+    position: relative;
 }
 
 
@@ -100,4 +101,41 @@
     left: 0;
     border-radius: 0;
     border-bottom: 2px solid var(--yellow);
+}
+
+.Select_L{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    align-items: center;
+    justify-content: start;
+    position: absolute;
+    top: 80px;
+    right: 10px;
+    width: 100px;
+    height:80px;
+    background-color: transparent;
+    opacity: 0.1;
+    transition: 0.3s;
+}
+
+.Navbar:hover .Select_L {
+    opacity:1;
+}
+
+.EN_L,
+.ES_L{
+    background-color: var(--ligth);
+    border-radius: 5px;
+    width: 50px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.EN_L:hover,
+.ES_L:hover {
+    background-color: var(--yellow);
 }

@@ -1,14 +1,20 @@
+import { CHANGE_LANGUAGES } from './actions';
+
 const initialState = {
-  lenguage: "en",
-  lenguagePack: {},
+  Languages: 'EN'
 };
 
 const rootReducer = (state = initialState, { type, payload }) => {
-  switch (key) {
-    case value:
-      break;
+  switch (type) {
+    case CHANGE_LANGUAGES:
+      return {
+        ...state,
+        Languages: payload
+      };
 
     default:
-      break;
+      return state;
   }
 };
+
+export default rootReducer;
