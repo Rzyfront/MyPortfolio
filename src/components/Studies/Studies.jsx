@@ -12,14 +12,14 @@ function Studies() {
     <div id='Studies' className={style.Container}>
         <h2 className={style.Title}>{Languages==='EN'?Studies_EN.Title:Studies_ES.Title}</h2>
         <div className={style.StudiesBox}>
-          <ul>
+          <ul className={style.ul}>
             {
               Studies.map(({degree,date,description},i) =>{
-                return<li key={i}>
-                      <h3>{degree}</h3>
-                      <p>{date}</p>
-                      <p>{description}</p>
-            </li>
+                return<li key={i} className={style.li}>
+                      <h3 className={style.degree}>{degree}</h3>
+                      <p className={style.date}>{date}</p>
+                      <p className={style.description}>{description}</p>
+                      </li>
               })
             }
           </ul>

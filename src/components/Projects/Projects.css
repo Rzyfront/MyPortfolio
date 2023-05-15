@@ -40,12 +40,13 @@
     width: 350px;
     height: 450px;
     transition: 0.3s;
-    display: none;
+    opacity: 0;
 }
 
 .Card-Projects-Box .Card-Project:hover {
     transform: scale(1.02);
 box-shadow: rgba(6, 6, 13, 0.31) 0px 2px 5px -1px, rgba(0, 0, 0, 0.245) 0px 1px 3px -1px;
+opacity: 1;
 }
 
 .Card-Project .Cont-Img{
@@ -135,24 +136,24 @@ box-shadow: rgba(6, 6, 13, 0.31) 0px 2px 5px -1px, rgba(0, 0, 0, 0.245) 0px 1px 
 
 .fade-in .Container-Proyects .Card-Projects-Box .c1 {
 animation: example 3s;
-display: block;
+opacity: 0.8; 
 }
 .fade-in .Container-Proyects .Card-Projects-Box .c2 {
     animation: example 1s;
-    display: block;
+opacity: 0.8;
 }
 .fade-in .Container-Proyects .Card-Projects-Box .c3 {
 animation: example 4s;
-display: block;
+opacity: 0.8;
 }
 .fade-in .Container-Proyects .Card-Projects-Box .c4 {
     animation: example 2s;
-    display: block;
+opacity: 0.8;
 }
 
 .fade-in .Container-Proyects .Card-Projects-Box .c5 {
     animation: example 3s;
-    display: block;
+    opacity: 0.8;
 }
 
 /* ----------------------------------------------
