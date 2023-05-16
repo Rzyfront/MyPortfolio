@@ -2,4 +2,99 @@
     width: 100%;
     height: 100vh;
     padding-top: 60px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    overflow: auto;
+}
+
+.Container-ContactMe .ContactMe-Box{
+    display: flex;
+    margin-top: 30px;
+    width: 60%;
+    min-height: 500px;
+    max-height: 90%;
+    background-color: transparent;
+    border-radius: 15px;
+}
+
+.Container-ContactMe .ContactMe-Box .Left{
+    width: 45%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    padding: 50px;
+    gap: 1%;
+    flex-direction: column;
+    backdrop-filter: blur(10px);
+    border-radius: 15px 0  0 15px;
+    background: -moz-linear-gradient(89deg, rgba(67, 68, 70, 0.59) 0%, rgba(112, 112, 113, 0.44) 100%);
+    
+        /* safari 5.1+,chrome 10+ */
+        background: -webkit-linear-gradient(89deg, rgba(67, 68, 70, 0.59) 0%, rgba(112, 112, 113, 0.44) 100%);
+    
+        /* opera 11.10+ */
+        background: -o-linear-gradient(89deg, rgba(67, 68, 70, 0.59) 0%, rgba(112, 112, 113, 0.44) 100%);
+    
+        /* ie 6-9 */
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#707071', endColorstr='#434446', GradientType=0);
+    
+        /* ie 10+ */
+        background: -ms-linear-gradient(89deg, rgba(67, 68, 70, 0.59) 0%, rgba(112, 112, 113, 0.44) 100%);
+    
+        /* global 94%+ browsers support */
+        background: linear-gradient(89deg, rgba(67, 68, 70, 0.59) 0%, rgba(112, 112, 113, 0.44) 100%);
+}
+
+.Container-ContactMe .ContactMe-Box .Rigth {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 55%;
+    height: 100%;
+    border-radius: 0 15px 15px 0;
+    background-color: var(--ligth);
+}
+
+.Container-ContactMe .ContactMe-Box .Left .C-Title{
+    font-size: 5rem;
+    text-align: left;
+    font-family: var(--text);
+    font-weight: 600;
+    color: var(--yellow);
+}
+
+.Container-ContactMe .ContactMe-Box .Left .C-Text {
+    font-size: 1rem;
+    text-align: left;
+    font-weight: 200;
+    font-family: var(--text);
+    color: var(--ligth);
+    padding: 5px;
+    width: 80%;
+}
+
+
+.Container-ContactMe .ContactMe-Box .Rigth .C-Form{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 80%;
+    gap:15%;
+}
+
+.Container-ContactMe .ContactMe-Box .Rigth .C-Form .C-Input{
+    width: 300px;
+    
+}
+
+.Container-ContactMe .ContactMe-Box .Rigth .C-Form Input,
+.Container-ContactMe .ContactMe-Box .Rigth .C-Form Label{
+    font-family: var(--text);
+    font-size: 1rem;
+    font-weight: 300;
+    color: black;
 }

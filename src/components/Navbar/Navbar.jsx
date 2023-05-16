@@ -43,28 +43,24 @@ const { Home, About, Projects, Studies,Skills, WorkExperience, ContactMe } = Lan
           <span className={style.Noselect}>{Skills}</span>
           <div className={style.Circle}></div>
         </a>
-         <a href='#WExp' className={style.Links}>
+         {/* <a href='#WExp' className={style.Links}>
           <span className={style.Noselect}>{WorkExperience}</span>
           <div className={style.Circle}></div>
-        </a>
+        </a> */}
         <a href='#Contact' className={style.Links}>
           <span className={style.Noselect}>{ContactMe}</span>
           <div className={style.Circle}></div>
         </a>
       </div>
         <div className={style.Select_L}>
-            <h4
+        <img width="96" height="96" src="https://img.icons8.com/emoji/96/united-states-emoji.png" alt="united-states-emoji" 
           className={style.EN_L}
           onClick={() => handleLanguageChange('EN')}
-        >
-          EN
-        </h4>
-        <h4
+        />
+        <img width="96" height="96" src="https://img.icons8.com/emoji/96/spain-emoji.png" alt="spain-emoji"
           className={style.ES_L}
           onClick={() => handleLanguageChange('ES')}
-        >
-          ES
-        </h4>
+        />
         </div>
     </div>
   );
