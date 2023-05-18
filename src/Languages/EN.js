@@ -126,3 +126,17 @@ export const Studies_EN = {
     }
   ]
 };
+
+// ERROR----------------------------------------------------------------
+
+export const Error1_EN = {
+  Title: 'Upss!',
+  Text: 'Something went wrong, make sure to fill in the fields and try again',
+  Botton: 'Understood'
+};
+
+export const Error2_EN = {
+  Title: 'The E-Mail is not sent?',
+  Text: 'Contact me through my social networks.',
+  Botton: 'Ok'
+};

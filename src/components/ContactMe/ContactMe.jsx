@@ -5,7 +5,7 @@ import { Input,useInput,Textarea,Button } from '@nextui-org/react';
 import {RiMailSendLine} from 'react-icons/ri'
 
 
-function ContactMe() {
+function ContactMe({setNotify}) {
     const { value, reset, bindings } = useInput("");
   
   const validateEmail = (value) => {
@@ -27,12 +27,14 @@ function ContactMe() {
 
 
   const [state, handleSubmit] = useForm("mrgvdyor");
-  console.log(state)
+  if (state.submitting && !state.succeeded){
+    setNotify(true)
+  }
 
 
   return (
     <div id='Contact' className='Container-ContactMe'>
-
+      
       <div className='ContactMe-Box'>
       <div className='Left'>
       <h3 className='C-Title'>

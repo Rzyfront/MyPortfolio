@@ -1,3 +1,86 @@
 .App{
     background-color: var(--dark);
+    position: relative;
+}
+.App .NotifyContact {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    z-index: 10;
+    backdrop-filter: blur(8px);
+
+}
+
+.App .NotifyContact .CardNotify {
+    width: 50%;
+    height: 50%;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    background-color: rgba(67, 67, 67, 0.819);
+    padding: 30px 60px;
+    transition: 0.3s;
+}
+
+.App .NotifyContact .CardNotify:hover {
+box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+.App .NotifyContact .CardNotify .Upss{
+    font-size: 3rem;
+    font-family: var(--text);
+    font-weight: 400;
+    color: var(--yellow);
+}
+
+.App .NotifyContact .CardNotify .ErrorText {
+    font-size: 2rem;
+    font-family: var(--text);
+    font-weight: 300;
+    color: var(--ligth);
+    text-align: center;
+}
+
+.App .NotifyContact .CardNotify .Ok {
+    font-size:1.2rem;
+    border: none;
+    outline: none;
+    font-family: var(--text);
+    font-weight: 500;
+    color: var(--dark);
+    text-align: center;
+    width: 100px;
+    height: 35px;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.App .NotifyContact .CardNotify .Ok:hover {
+    background-color: var(--yellow);
+}
+
+.App .NotifyContact .CardNotify .Alternative{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.App .NotifyContact .CardNotify .Alternative a{
+    outline: none;
+    color: var(--dark);
+    border-radius: 10px;
+    padding: 5px 15px;
+    border: 1px solid var(--dark);
+}
+
+.App .NotifyContact .CardNotify .Alternative a:hover {
+    background-color: var(--yellow);
 }

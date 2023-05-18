@@ -6,3 +6,4 @@ export { default as Projects } from './Projects/Projects';
 export { default as Studies } from './Studies/Studies';
 export { default as Skills } from './Skills/Skills';
 export { default as ContactMe } from './ContactMe/ContactMe';
+export { default as ErrorNotify } from './ContactMe/ErrorNotify/ErrorNotify';

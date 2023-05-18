@@ -126,3 +126,17 @@ export const Studies_ES = {
     }
   ]
 };
+
+// ERROR----------------------------------------------------------------
+
+export const Error1_ES = {
+  Title: 'Upss!',
+  Text: 'Algo salio mal, asegurate de llenar los campos y vuelve a intentarlo',
+  Botton: 'Entendido'
+};
+
+export const Error2_ES = {
+  Title: '¿No se envia el E-Mail?',
+  Text: 'Comunicate conmigo por mis redes sociales.',
+  Botton: 'Entendido'
+};
