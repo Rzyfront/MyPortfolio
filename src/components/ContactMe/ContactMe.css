@@ -26,6 +26,9 @@
     align-items: start;
     padding: 50px;
     gap: 1%;
+    word-wrap: break-word;
+    overflow: hidden;
+    line-break: anywhere;
     flex-direction: column;
     backdrop-filter: blur(10px);
     border-radius: 15px 0  0 15px;
@@ -63,6 +66,7 @@
     font-family: var(--text);
     font-weight: 600;
     color: var(--yellow);
+    
 }
 
 .Container-ContactMe .ContactMe-Box .Left .C-Text {

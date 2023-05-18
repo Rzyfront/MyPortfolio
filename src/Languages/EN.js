@@ -127,6 +127,19 @@ export const Studies_EN = {
   ]
 };
 
+// CONTACT----------------------------------------------------------------
+
+export const Contact_EN = {
+  Title: 'Contact me',
+  Text: 'It will be a pleasure to provide my services to contribute to the evolution of your company',
+  InputEmail: 'E-mail',
+  RegexEmail: 'Ingresa un E-mail valido',
+  GoodEmail: 'Correct Email',
+  BadEmail: 'Please enter a valid email',
+  EmailMessage: 'Message',
+  MessagePlaceholder: 'Enter your message'
+};
+
 // ERROR----------------------------------------------------------------
 
 export const Error1_EN = {

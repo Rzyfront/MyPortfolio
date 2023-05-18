@@ -3,11 +3,17 @@ import './ContactMe.css'
 import { useForm, ValidationError } from '@formspree/react';
 import { Input,useInput,Textarea,Button } from '@nextui-org/react';
 import {RiMailSendLine} from 'react-icons/ri'
+import { Contact_EN } from '../../Languages/EN';
+import { Contact_ES } from '../../Languages/ES';
+import { useSelector } from 'react-redux';
 
 
 function ContactMe({setNotify}) {
     const { value, reset, bindings } = useInput("");
+     const {Languages} = useSelector(state=>state)
   
+  const {Title,Text,InputEmail,RegexEmail,GoodEmail,BadEmail,EmailMessage,MessagePlaceholder} = Languages === 'EN' ? Contact_EN : Contact_ES;
+
   const validateEmail = (value) => {
     return value.match(/^(?!$)[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i);
   };
@@ -20,7 +26,7 @@ function ContactMe({setNotify}) {
       };
     const isValid = validateEmail(value);
     return {
-      text: isValid ? "Correct email" : "Enter a valid email",
+      text: isValid ? GoodEmail : BadEmail,
       color: isValid ? "primary" : "warning",
     };
   }, [value]);
@@ -38,9 +44,9 @@ function ContactMe({setNotify}) {
       <div className='ContactMe-Box'>
       <div className='Left'>
       <h3 className='C-Title'>
-        Contact me
+      {Title}
       </h3>
-      <p className='C-Text'>It will be a pleasure to provide my services to contribute to the evolution of your company</p>
+      <p className='C-Text'>{Text}</p>
       </div>
       <div className='Rigth'>
       <form onSubmit={handleSubmit} className='C-Form' action="https://formspree.io/f/mrgvdyor" method="POST">
@@ -54,9 +60,9 @@ function ContactMe({setNotify}) {
           helperColor={helper.color}
           helperText={helper.text}
           type="email"
-          label="Email"
+          label={InputEmail}
           name="email"
-          placeholder="With regex validation"
+          placeholder={RegexEmail}
           id="email"
           className='C-Input'
         />
@@ -69,9 +75,9 @@ function ContactMe({setNotify}) {
       <Textarea
           id="message"
           name="message"
-          label="Default"
+          label={EmailMessage}
           helperText="Please enter your message"
-          placeholder="Enter your message"
+          placeholder={MessagePlaceholder}
           className='C-Input'
         />
       <ValidationError 
