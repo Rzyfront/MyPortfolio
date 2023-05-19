@@ -181,7 +181,19 @@ padding: 30px;
 
 .Container-ContactMe .ContactMe-Box .Rigth .C-Form .C-Input{
     min-height:35px ;
+    width: 350px;
 }
 }
 
 
+@media screen and (max-width:550px) {
+    .Container-ContactMe .ContactMe-Box .Rigth .C-Form .C-Input {
+        width: 250px;
+    }
+}
+
+@media screen and (max-width:390px) {
+    .Container-ContactMe .ContactMe-Box .Rigth .C-Form .C-Input {
+        width: 200px;
+    }
+}
