@@ -1,21 +1,28 @@
-import React, { useEffect } from "react";
-import logo from "../../assets/Rz_Logo.svg";
-import style from "./Navbar.module.css";
-import { Navbar_EN } from "../../Languages/EN"; 
-import { Navbar_ES } from "../../Languages/ES"; 
-import { useDispatch, useSelector } from "react-redux";
+import React, { useState } from "react";
+import style from "./Navbar.module.css"; 
+import { useDispatch } from "react-redux";
 import { ChangeLanguage } from "../../Redux/actions";
-
+import NavbarOptions from "./NavbarOptions/NavbarOptions";
+import {ImMenu3,ImMenu4} from 'react-icons/im';
 function Navbar() {
-const {Languages} = useSelector(state=>state)
+const [Toogle , setToogle]= useState(false);
+
 const dispatch = useDispatch();
 
-const { Home, About, Projects, Studies,Skills, WorkExperience, ContactMe } = Languages === 'EN' ? Navbar_EN : Navbar_ES;
 
 
   const handleLanguageChange = (language) => {
     dispatch(ChangeLanguage(language));
   };
+
+  const handleToogle = () => {
+    if (Toogle) {
+      setToogle(false);
+    }else{
+      setToogle(true);
+    }
+
+  }
 
   return (
     <div className={style.Navbar}>
@@ -23,34 +30,17 @@ const { Home, About, Projects, Studies,Skills, WorkExperience, ContactMe } = Lan
         <h1 className={style.Name}>Rafael Martinez</h1>
     
       <div className={style.Options}>
-        <a href='#Home' className={style.Links}>
-          <span className={style.Noselect}>{Home}</span>
-          <div className={style.Circle}></div>
-        </a>
-        <a href='#AboutMe' className={style.Links}>
-          <span className={style.Noselect}>{About}</span>
-          <div className={style.Circle}></div>
-        </a>
-        <a href='#Projects' className={style.Links}>
-          <span className={style.Noselect}>{Projects}</span>
-          <div className={style.Circle}></div>
-        </a>
-        <a href='#Studies' className={style.Links}>
-          <span className={style.Noselect}>{Studies}</span>
-          <div className={style.Circle}></div>
-        </a>
-         <a href='#Skills' className={style.Links}>
-          <span className={style.Noselect}>{Skills}</span>
-          <div className={style.Circle}></div>
-        </a>
-         {/* <a href='#WExp' className={style.Links}>
-          <span className={style.Noselect}>{WorkExperience}</span>
-          <div className={style.Circle}></div>
-        </a> */}
-        <a href='#Contact' className={style.Links}>
-          <span className={style.Noselect}>{ContactMe}</span>
-          <div className={style.Circle}></div>
-        </a>
+        <NavbarOptions/>
+      </div>
+      <div className={style.ToggleLinks}>
+        {Toogle ? <ImMenu4 className={style.Ico} onClick={handleToogle}/> : <ImMenu3 className={style.Ico} onClick={handleToogle}/>}
+        
+          {Toogle&&
+          <div className={style.ShowOptions}>
+          <NavbarOptions/>
+          </div>
+          }
+        
       </div>
         <div className={style.Select_L}>
         <img width="96" height="96" src="https://img.icons8.com/emoji/96/united-states-emoji.png" alt="united-states-emoji" 

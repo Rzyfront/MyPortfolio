@@ -1,6 +1,7 @@
 .Container-AboutMe{
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
+    max-height: fit-content;
     padding-top: 60px;
      /* ff 3.6+ */
     background:-moz-linear-gradient(90deg, rgba(67, 68, 70, 1) 34%, rgba(67, 68, 70, 0.75) 59%, rgba(238, 130, 238, 0) 100%); 
@@ -23,14 +24,15 @@
 
 .Info-AboutMe{
     width: 100%;
-    height: calc(100vh - 60px);
+    min-height: calc(100vh - 60px);
+    max-height: fit-content;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .AboutInfo{
-    width: 60%;
+    min-width: 60%;
     height: 80%;
     padding: 5% 10%;
     display: flex;
@@ -39,7 +41,7 @@
 }
 
 .AboutImg {
-    width: 40%;
+    min-width: 40%;
     height: 80%;
 }
 
@@ -107,6 +109,17 @@ animation: slide-right 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
     animation: example 3s;
 }
  
+
+
+
+@media screen and (max-width:550px) {
+    .Info-AboutMe{
+        flex-direction: column;
+    }
+    .AboutImg {
+        padding-bottom: 30px;
+    }
+}
 
 
 /* ----------------------------------------------

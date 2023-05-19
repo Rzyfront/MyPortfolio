@@ -75,3 +75,23 @@
         letter-spacing: 2px;
         text-align: justify;
 }
+
+
+
+@media screen and (max-width: 550px){
+    .ul{
+        width: 100%;
+    }
+
+        .degree {
+            font-size: 1.2rem;
+        }
+    
+        .date {
+            font-size: 0.7rem;
+        }
+    
+        .description {
+            font-size: 1rem;
+        }
+}

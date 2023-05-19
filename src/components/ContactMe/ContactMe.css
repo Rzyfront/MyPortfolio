@@ -25,7 +25,7 @@
     justify-content: center;
     align-items: start;
     padding: 50px;
-    gap: 1%;
+    gap: 2%;
     word-wrap: break-word;
     overflow: hidden;
     line-break: anywhere;
@@ -61,7 +61,7 @@
 }
 
 .Container-ContactMe .ContactMe-Box .Left .C-Title{
-    font-size: 5rem;
+    font-size: 3rem;
     text-align: left;
     font-family: var(--text);
     font-weight: 600;
@@ -102,3 +102,73 @@
     font-weight: 300;
     color: black;
 }
+
+
+
+@media screen and (max-width:1000px) {
+
+.Container-ContactMe .ContactMe-Box .Left{
+padding: 30px;
+}
+    
+.Container-ContactMe .ContactMe-Box .Rigth .C-Form .C-Input{
+    width: 200px;
+    
+}
+
+.Container-ContactMe .ContactMe-Box .Left .C-Title{
+    font-size: 2.5rem;   
+}
+
+}
+
+
+@media screen and (max-width:900px) {
+    
+.Container-ContactMe .ContactMe-Box .Left{
+    padding: 20px;
+}
+
+.Container-ContactMe .ContactMe-Box .Left .C-Title{
+    font-size: 2rem;   
+}
+.Container-ContactMe .ContactMe-Box .Left .C-Text {
+    font-size: 0.8rem;
+}
+}
+
+
+
+@media screen and (max-width:750px) {
+
+.Container-ContactMe .ContactMe-Box{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+    width: 100%;
+}
+    
+.Container-ContactMe .ContactMe-Box .Left{
+    padding: 20px;
+     width: 80%;
+    height: 35%;
+    border-radius:15px 15px 0 0;
+}
+
+.Container-ContactMe .ContactMe-Box .Rigth {
+    width: 80%;
+    height: 65%;
+    border-radius:0 0 15px 15px;
+    background-color: var(--ligth);
+}
+
+.Container-ContactMe .ContactMe-Box .Left .C-Title{
+    font-size: 2rem;   
+}
+.Container-ContactMe .ContactMe-Box .Left .C-Text {
+    font-size: 0.8rem;
+}
+}
+
+
