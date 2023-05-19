@@ -133,9 +133,9 @@ export const Contact_EN = {
   Title: 'Contact me',
   Text: 'It will be a pleasure to provide my services to contribute to the evolution of your company',
   InputEmail: 'E-mail',
-  RegexEmail: 'Enter a valid E-mail',
-  GoodEmail: 'Correct Email',
-  BadEmail: 'Please enter a valid email',
+  RegexEmail: 'Enter a valid e-mail',
+  GoodEmail: 'Correct e-mail',
+  BadEmail: 'Please enter a valid e-mail',
   EmailMessage: 'Message',
   MessagePlaceholder: 'Enter your message'
 };
@@ -149,7 +149,16 @@ export const Error1_EN = {
 };
 
 export const Error2_EN = {
-  Title: 'The E-Mail is not sent?',
+  Title: 'The e-mail is not sent?',
   Text: 'Contact me through my social networks.',
+  Botton: 'Ok'
+};
+
+// SUCCESS----------------------------------------------------------------
+
+export const Success_EN = {
+  Title: 'Sent successfully!',
+  Text: 'Thank you for writing to me, I will be answering you very soon.',
+  Ad: 'Do you want to know more about me? look at my social media...',
   Botton: 'Ok'
 };

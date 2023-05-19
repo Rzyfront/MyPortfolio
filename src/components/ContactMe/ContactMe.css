@@ -26,6 +26,7 @@
     align-items: start;
     padding: 50px;
     gap: 2%;
+    white-space: normal;
     word-wrap: break-word;
     overflow: hidden;
     line-break: anywhere;
@@ -77,7 +78,10 @@
     color: var(--ligth);
     padding: 5px;
     width: 80%;
+    white-space: normal;
+    overflow-wrap: break-word;
 }
+
 
 
 .Container-ContactMe .ContactMe-Box .Rigth .C-Form{
@@ -134,6 +138,7 @@ padding: 30px;
 }
 .Container-ContactMe .ContactMe-Box .Left .C-Text {
     font-size: 0.8rem;
+    width: 90%;
 }
 }
 
@@ -152,13 +157,15 @@ padding: 30px;
 .Container-ContactMe .ContactMe-Box .Left{
     padding: 20px;
      width: 80%;
-    height: 35%;
+    min-height: 35%;
+    max-height: fit-content;
     border-radius:15px 15px 0 0;
 }
 
 .Container-ContactMe .ContactMe-Box .Rigth {
     width: 80%;
-    height: 65%;
+    min-height: 65%;
+    max-height: fit-content;
     border-radius:0 0 15px 15px;
     background-color: var(--ligth);
 }
@@ -168,6 +175,12 @@ padding: 30px;
 }
 .Container-ContactMe .ContactMe-Box .Left .C-Text {
     font-size: 0.8rem;
+    width: 95%;
+    overflow-wrap: break-word;
+}
+
+.Container-ContactMe .ContactMe-Box .Rigth .C-Form .C-Input{
+    min-height:35px ;
 }
 }
 

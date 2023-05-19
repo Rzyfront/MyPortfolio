@@ -8,7 +8,7 @@ import { Contact_ES } from '../../Languages/ES';
 import { useSelector } from 'react-redux';
 
 
-function ContactMe({setNotify}) {
+function ContactMe({setNotify,setSuccess}) {
     const { value, reset, bindings } = useInput("");
      const {Languages} = useSelector(state=>state)
   
@@ -33,10 +33,17 @@ function ContactMe({setNotify}) {
 
 
   const [state, handleSubmit] = useForm("mrgvdyor");
-  if (state.submitting && !state.succeeded){
-    setNotify(true)
+
+  if ((state.errors.length>0 && state.submitting)) {
+    setNotify(true) 
   }
 
+  if (state.succeeded){
+    setSuccess(true)
+  }
+  
+
+  console.log(state)
 
   return (
     <div id='Contact' className='Container-ContactMe'>

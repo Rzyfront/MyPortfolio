@@ -149,7 +149,16 @@ export const Error1_ES = {
 };
 
 export const Error2_ES = {
-  Title: '¿No se envia el E-Mail?',
+  Title: '¿No se envia el e-mail?',
   Text: 'Comunicate conmigo por mis redes sociales.',
   Botton: 'Entendido'
+};
+
+// SUCCESS----------------------------------------------------------------
+
+export const Success_ES = {
+  Title: '¡Enviado exitosamente!',
+  Text: 'Gracias por escribirme, te responderé muy pronto.',
+  Ad: '¿Quieres saber más sobre mí? Echa un vistazo a mis redes sociales...',
+  Button: 'Aceptar'
 };

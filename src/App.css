@@ -48,6 +48,11 @@ box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
     text-align: center;
 }
 
+.App .NotifyContact .CardNotify .Ad {
+    font-size: 0.8rem;
+    color: var(--dark);
+}
+
 .App .NotifyContact .CardNotify .Ok {
     font-size:1.2rem;
     border: none;
@@ -90,7 +95,8 @@ box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
 @media screen and (max-width:750px) {
     .App .NotifyContact .CardNotify {
             width: 80%;
-            height: 70%;
+            min-height: 70%;
+            max-height: fit-content;
             padding: 20px 40px;
         }
 }
@@ -98,7 +104,7 @@ box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
 @media screen and (max-width:550px) {
     .App .NotifyContact .CardNotify {
         width: 90%;
-        height: 80%;
+        max-height: fit-content;
         padding: 15px 30px;
     }
 

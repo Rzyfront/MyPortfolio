@@ -1,5 +1,5 @@
 import React,{ useState } from "react";
-import { Header,Navbar,AboutMe,AnimatedContainer,Projects,Studies,Skills,ContactMe,ErrorNotify } from "./components/components"
+import { Header,Navbar,AboutMe,AnimatedContainer,Projects,Studies,Skills,ContactMe,ErrorNotify,SuccessNotify } from "./components/components"
 import "./App.css";
 
 
@@ -10,17 +10,24 @@ function App() {
 
      const [notify , setNotify] = useState(false)
      const [CountErrors , setCountErrors] = useState(0)
+     const [success, setSuccess] = useState(false)
+     const [CountSuccess , setCountSuccess] = useState(0)
 
      const HandleErrorCount = ()=>{
+        setCountErrors(CountErrors+1)
         setNotify(false);
-        setCountErrors(1)
+     }
+
+     const handlerSuccess = () =>{
+        setCountSuccess(CountSuccess+1)
+        setSuccess(false)
      }
 
      
   return (
-    <div className="App">
-      {notify && <ErrorNotify HandleErrorCount={HandleErrorCount} CountErrors={CountErrors}/>}
-      
+    <div className="App" onClick={()=>setNotify(false)}>
+      {(notify)  && <ErrorNotify HandleErrorCount={HandleErrorCount} CountErrors={CountErrors}/>}
+      {(success && CountSuccess<1) && <SuccessNotify handlerSuccess={handlerSuccess}/>}
     <Navbar/> 
      <AnimatedContainer>
       <Header/>
@@ -38,7 +45,7 @@ function App() {
       <Skills/>
     </AnimatedContainer>
       <AnimatedContainer>
-      <ContactMe setNotify={setNotify}/>
+      <ContactMe setNotify={setNotify} setSuccess={setSuccess}/>
     </AnimatedContainer>
     
     </div>
