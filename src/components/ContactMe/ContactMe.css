@@ -107,6 +107,13 @@
     color: black;
 }
 
+.Container-ContactMe .ContactMe-Box .Rigth .C-Form textarea,
+.Container-ContactMe .ContactMe-Box .Rigth .C-Form p{
+    font-family: var(--text);
+    font-weight: 300;
+    color: black;
+}
+
 
 
 @media screen and (max-width:1000px) {
