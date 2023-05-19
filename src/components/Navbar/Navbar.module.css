@@ -1,3 +1,4 @@
+@media (pointer: fine) {
 .Navbar {
     display: flex;
     align-items: center;
@@ -17,7 +18,25 @@
     background-color: var(--hover);
     box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
 }
+}
 
+@media (pointer: coarse) {
+  .Navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 60px;
+    padding: 0 20px 0 20px;
+    transition: 0.5s;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+    background-color: var(--hover);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+}
 
 .Name{
     color: var(--ligth);
@@ -116,11 +135,12 @@
     justify-content: center;
     gap: 10px;
     position: absolute;
-    width: fit-content;
+    min-width: 180px;
+    max-width: fit-content;
     height: fit-content;
-    padding: 20px 40px;
+    padding: 20px 30px;
     top: 60px;
-    right: 80px;
+    right: 70px;
     background-color: var(--hover);
     border-radius: 10px;
 }

@@ -7,7 +7,7 @@ export const Navbar_EN = {
   Studies: 'Studies',
   Skills: 'Skills',
   WorkExperience: 'Work Experience',
-  ContactMe: 'Contact Me'
+  ContactMe: 'Contact me'
 };
 
 // HOME--------------------------------------------------------------------

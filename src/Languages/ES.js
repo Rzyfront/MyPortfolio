@@ -2,7 +2,7 @@
 
 export const Navbar_ES = {
   Home: 'Inicio',
-  About: 'Sobre Mí',
+  About: 'Sobre mí',
   Projects: 'Proyectos',
   Studies: 'Estudios',
   Skills: 'Habilidades',
