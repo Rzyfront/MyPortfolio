@@ -8,7 +8,7 @@ function ProjectsCard({id,name,img,description,url}) {
           </div>
           <div className='Cont-Info'>
             <h3 className='Card-Title'>{name}</h3>
-            <p className='Card-Text'>{description}</p>
+            <p className='Card-Text' dangerouslySetInnerHTML={{ __html: description}}></p>
             <a className='Card-link' target='_blank' href={url}>{url}</a>
           </div>
         </div>

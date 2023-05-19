@@ -131,6 +131,16 @@ opacity: 1;
     width: 100%;
     overflow: hidden;
 }
+.Card-Project .Cont-Info .Card-Text a{
+    outline: none;
+    text-decoration: none;
+    color: var(--yellow);
+    transition: 0.3s;
+}
+
+.Card-Project .Cont-Info .Card-Text a:hover {
+    text-shadow: 3px 3px 3px black;
+}
 
 .Card-Project .Cont-Info .Card-link {
     font-size: 0.8rem;
