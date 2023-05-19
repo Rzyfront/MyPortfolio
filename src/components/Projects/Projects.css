@@ -154,8 +154,8 @@ opacity: 1;
 
 
     .fade-in .Container-Proyects .Title-Projects {
-            -webkit-animation: slide-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-            animation: slide-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+            -webkit-animation: slide-top 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+            animation: slide-top 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
         }
     
         .fade-in .Container-Proyects .Card-Projects-Box .c1 {
