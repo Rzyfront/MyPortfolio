@@ -133,7 +133,7 @@ export const Contact_EN = {
   Title: 'Contact me',
   Text: 'It will be a pleasure to provide my services to contribute to the evolution of your company',
   InputEmail: 'E-mail',
-  RegexEmail: 'Ingresa un E-mail valido',
+  RegexEmail: 'Enter a valid E-mail',
   GoodEmail: 'Correct Email',
   BadEmail: 'Please enter a valid email',
   EmailMessage: 'Message',
