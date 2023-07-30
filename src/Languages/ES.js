@@ -27,6 +27,9 @@ export const About_ES = {
 };
 
 // PROJECTS----------------------------------------------------------------
+//HARMON-IA
+import HarmonHome from '../assets/Harmon-IA/Harmon-IA-Page.png';
+import HarmonSearch from '../assets/Harmon-IA/Harmon-IA-Search.png';
 
 // NEXUS IMG
 import NexusLanding from '../assets/NexusApp/NexusLanding.jpg';
@@ -50,6 +53,14 @@ import Game from '../assets/Game4/Game4Img.jpg';
 export const Projects_ES = {
   Title: 'Proyectos',
   Projects: [
+    {
+      id: 0,
+      name: 'Harmon-Ia',
+      img: [HarmonHome, HarmonSearch],
+      description:
+        'Harmon-Ia es un Reproductor y Creador de musica online que busca principalmente ser un banco de musica para su posterior escucha de sus usuarios pero tambien busca integrar tecnologias de Inteligencia Artificial para la creacion de musica basada en APIs de IA-Audio-Generator esta nueva implementacion estara disponible en la proxima version...',
+      url: 'https://harmon-ia.vercel.app/'
+    },
     {
       id: 1,
       name: 'Nexus App',
