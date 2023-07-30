@@ -99,7 +99,7 @@ export const Projects_ES = {
       img: [GifGen],
       description:
         'Gif Generator te permite generar gifs según la palabra clave de búsqueda. Esto se logra gracias a la API de <a href="https://giphy.com/">giphy.com</a>, que cuenta con una gran variedad de gifs en su base de datos...',
-      url: 'https://git-creator.vercel.app/'
+      url: 'https://gif-creator.vercel.app/'
     },
     {
       id: 5,
