@@ -119,7 +119,7 @@ export const Studies_ES = {
   Studies: [
     {
       degree: 'Bootcamp Soy Henry - Desarrollo Web Full Stack',
-      date: 'OCT/12/2022 - DIC/23/2022',
+      date: 'OCT/08/2022 - DIC/23/2022',
       description:
         'Durante mi tiempo en el Bootcamp Soy Henry, aprendí mucho en poco tiempo. La mejor enseñanza que recibí fue aprender rápidamente y con ganas de seguir aprendiendo. Además, complementé mi aprendizaje profesional con lo que recibí aquí y me siento capaz de lograr cualquier objetivo en programación.'
     },

@@ -119,7 +119,7 @@ export const Studies_EN = {
   Studies: [
     {
       degree: 'BootCamp Soy Henry - Full Stack Web Developer',
-      date: 'JAN/12/2023 - MAY/08/2023',
+      date: 'OCT/08/2022 - DIC/23/2022',
       description:
         'During my time at the Bootcamp I am Henry I learned a lot in a short time, the best teaching I have is to learn quickly and with the desire to learn more, but also, I complement my professional learning with what I received here and I feel capable of achieving any goal in programming.'
     },
