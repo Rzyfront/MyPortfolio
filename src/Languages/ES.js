@@ -23,14 +23,13 @@ export const Home_ES = {
 export const About_ES = {
   Title: 'Sobre mí',
   About:
-    "¡Hola! Soy un apasionado desarrollador web <span>full stack</span> con un enfoque en la creatividad. Descubro e implemento nuevas bibliotecas de <span>JavaScript</span> y <span>React</span> en mis proyectos para sorprender y reducir los tiempos de desarrollo. Con una dedicación a los diseños <span>minimalistas</span>, combino la simplicidad con detalles destacados. Creo aplicaciones web funcionales y atractivas que superan las expectativas. Tengo experiencia en tecnologías backend como Express, Sequelize y <span>Postgresql</span>. ¡Llevaré tus proyectos al <span className='nextlv'>siguiente nivel</span>!"
+    "Programador <span>Full Stack</span> con 3 años de experiencia, soy un Desarrollador Web <span>DevOps</span> con experiencia en desarrollo con <span>Javascript</span> con frameworks como <span>Vue.js</span>, <span>Reactjs</span> y de css como <span>Tailwind css</span> y <span>Boostrap</span>. También poseo habilidades sólidas con herramientas de programación full stack como lo son los frameworks <span>Laravel</span> en Php y <span>Next</span> en Javascript, además de un amplio conocimiento en la creación, actualización y mantenimiento de <span>APIs</span> y <span>API RESTFUL</span> con herramientas de desarrollo como <span>Node.js</span>, <span>Php</span> o <span>Python</span>, así como en el manejo de bases de datos relacionales como <span>MYSQL</span>, <span>PostgreSQL</span>, <span>Oracle</span>, <span>MS SQL Server</span> y herramientas de control de versiones como <span>GIT</span>. Durante mi trayectoria, además, he tenido la responsabilidad de realizar despliegues con protocolos <span>HTTP</span> y <span>WS</span> en servicios web como <span>AWS</span>, <span>Vercel</span> y <span>Cloudflare</span> demostrando mi capacidad para gestionar eficientemente el ciclo de vida completo de desarrollo de aplicaciones web."
 };
 
 // PROJECTS----------------------------------------------------------------
 //HARMON-IA
 import HarmonHome from '../assets/Harmon-IA/Harmon-IA-Page.png';
 import HarmonSearch from '../assets/Harmon-IA/Harmon-IA-Search.png';
-
 // NEXUS IMG
 import NexusLanding from '../assets/NexusApp/NexusLanding.jpg';
 import NexusHome from '../assets/NexusApp/NexusHome.jpg';
@@ -50,11 +49,52 @@ import WeatherApp from '../assets/WeatherApp/WeatherAppImg.jpg';
 import GifGen from '../assets/GifCreator/GifCreator.jpg';
 // 4Game
 import Game from '../assets/Game4/Game4Img.jpg';
+// IsiClinic
+import IsiClinicDashboard from '../assets/IsiClinic/IsiClinicDashboard.png';
+// Mesura
+import MesuraDashboard from '../assets/Mesura/MesuraDashboard.png';
+// NeoNet
+import NeoNetHome from '../assets/Neonet/NeoNetHome.png';
+// El Roble
+import ElRobleHome from '../assets/ElRoble/ElRobleHome.png';
+
 export const Projects_ES = {
   Title: 'Proyectos',
   Projects: [
     {
       id: 0,
+      name: 'IsiClinic',
+      img: [IsiClinicDashboard],
+      description:
+        'IsiClinic es una plataforma integral para la gestión de clínicas médicas que permite administrar pacientes, citas, historiales clínicos y facturación en un solo lugar. Este sistema facilita el trabajo diario del personal médico y administrativo, mejorando la eficiencia y la atención al paciente.',
+      url: 'https://isi.clinic/'
+    },
+    {
+      id: 1,
+      name: 'NeoNet',
+      img: [NeoNetHome],
+      description:
+        'NeoNet es una plataforma de servicios de pagos electrónicos que facilita transacciones seguras y eficientes. El sistema ofrece múltiples opciones de pago, conciliación automática y reportes detallados, permitiendo a empresas y usuarios gestionar sus operaciones financieras de manera ágil y confiable.',
+      url: 'https://neonet.com.gt/'
+    },
+    {
+      id: 2,
+      name: 'El Roble',
+      img: [ElRobleHome],
+      description:
+        'El Roble es una empresa de seguros líder en Guatemala que ofrece una amplia gama de coberturas, desde seguros de vida y salud hasta protección para vehículos, viviendas y empresas. Su plataforma digital permite a los usuarios cotizar, contratar y gestionar sus pólizas de manera eficiente y transparente.',
+      url: 'https://www.elroble.com/'
+    },
+    {
+      id: 3,
+      name: 'Mesura',
+      img: [MesuraDashboard],
+      description:
+        'Mesura es una plataforma de comercio electrónico completa que no solo facilita las ventas online sino que también ofrece herramientas avanzadas para la administración personalizada de toda la tienda. El sistema incluye gestión de inventario, análisis de ventas, seguimiento de pedidos y múltiples opciones de personalización para adaptarse a las necesidades específicas de cada negocio.',
+      url: 'https://mesura-pearl.vercel.app/'
+    },
+    {
+      id: 4,
       name: 'Harmon-Ia',
       img: [HarmonHome, HarmonSearch],
       description:
@@ -62,7 +102,7 @@ export const Projects_ES = {
       url: 'https://harmon-ia.vercel.app/'
     },
     {
-      id: 1,
+      id: 5,
       name: 'Nexus App',
       img: [NexusLanding, NexusHome, NexusDetail, NexusFrom],
       description:
@@ -70,7 +110,7 @@ export const Projects_ES = {
       url: 'https://nexus-pi-app.vercel.app/'
     },
     {
-      id: 2,
+      id: 6,
       name: 'Bait App',
       img: [
         BaitLanding1,
@@ -86,7 +126,7 @@ export const Projects_ES = {
       url: 'https://bait-one.vercel.app/'
     },
     {
-      id: 3,
+      id: 7,
       name: 'Weather App',
       img: [WeatherApp],
       description:
@@ -94,7 +134,7 @@ export const Projects_ES = {
       url: 'https://weather-app-wine-rho.vercel.app/'
     },
     {
-      id: 4,
+      id: 8,
       name: 'Gif Creator',
       img: [GifGen],
       description:
@@ -102,7 +142,7 @@ export const Projects_ES = {
       url: 'https://gif-creator.vercel.app/'
     },
     {
-      id: 5,
+      id: 9,
       name: '4Game',
       img: [Game],
       description:

@@ -23,7 +23,7 @@ export const Home_EN = {
 export const About_EN = {
   Title: 'About me',
   About:
-    "Hello! I'm a passionate <span>full stack</span> web developer with a focus on creativity. I discover and implement new <span>JavaScript</span> and <span>React</span> libraries in my projects to amaze and reduce costs of time. With a dedication to <span>minimalist</span> <span>designs</span>, I combine simplicity with standout details. I create functional and attractive web applications that exceed expectations. I have <span>expertise</span> in backend technologies such as Express, Sequelize, and <span>Postgresql</span>. I will take your projects to the <span className='nextlv'>next level</span>!"
+    "<span>Full Stack</span> Programmer with 3 years of experience, I am a <span>DevOps</span> Web Developer with expertise in <span>Javascript</span> development using frameworks such as <span>Vue.js</span>, <span>Reactjs</span> and CSS frameworks like <span>Tailwind css</span> and <span>Bootstrap</span>. I also possess strong skills with full stack programming tools like <span>Laravel</span> framework in Php and <span>Next</span> in Javascript, as well as extensive knowledge in creating, updating, and maintaining <span>APIs</span> and <span>RESTful APIs</span> with development tools like <span>Node.js</span>, <span>Php</span> or <span>Python</span>, along with managing relational databases such as <span>MYSQL</span>, <span>PostgreSQL</span>, <span>Oracle</span>, <span>MS SQL Server</span> and version control tools like <span>GIT</span>. Throughout my career, I have also been responsible for deployments using <span>HTTP</span> and <span>WS</span> protocols on web services like <span>AWS</span>, <span>Vercel</span>, and <span>Cloudflare</span>, demonstrating my ability to efficiently manage the complete lifecycle of web application development."
 };
 
 // PROJECTS----------------------------------------------------------------
@@ -50,11 +50,52 @@ import WeatherApp from '../assets/WeatherApp/WeatherAppImg.jpg';
 import GifGen from '../assets/GifCreator/GifCreator.jpg';
 // 4Game
 import Game from '../assets/Game4/Game4Img.jpg';
+// IsiClinic
+import IsiClinicDashboard from '../assets/IsiClinic/IsiClinicDashboard.png';
+// Mesura
+import MesuraDashboard from '../assets/Mesura/MesuraDashboard.png';
+// NeoNet
+import NeoNetHome from '../assets/Neonet/NeoNetHome.png';
+// El Roble
+import ElRobleHome from '../assets/ElRoble/ElRobleHome.png';
+
 export const Projects_EN = {
   Title: 'Projects',
   Projects: [
     {
       id: 0,
+      name: 'IsiClinic',
+      img: [IsiClinicDashboard],
+      description:
+        'IsiClinic is a comprehensive platform for medical clinic management that allows administration of patients, appointments, medical records, and billing in one place. This system facilitates the daily work of medical and administrative staff, improving efficiency and patient care.',
+      url: 'https://isi.clinic/'
+    },
+    {
+      id: 1,
+      name: 'NeoNet',
+      img: [NeoNetHome],
+      description:
+        'NeoNet is an electronic payment services platform that facilitates secure and efficient transactions. The system offers multiple payment options, automatic reconciliation, and detailed reports, allowing businesses and users to manage their financial operations in an agile and reliable way.',
+      url: 'https://neonet.com.gt/'
+    },
+    {
+      id: 2,
+      name: 'El Roble',
+      img: [ElRobleHome],
+      description:
+        'El Roble is a leading insurance company in Guatemala that offers a wide range of coverage, from life and health insurance to protection for vehicles, homes, and businesses. Their digital platform allows users to quote, contract, and manage their policies efficiently and transparently.',
+      url: 'https://www.elroble.com/'
+    },
+    {
+      id: 3,
+      name: 'Mesura',
+      img: [MesuraDashboard],
+      description:
+        'Mesura is a complete e-commerce platform that not only facilitates online sales but also offers advanced tools for personalized store management. The system includes inventory management, sales analysis, order tracking, and multiple customization options to adapt to the specific needs of each business.',
+      url: 'https://mesura-pearl.vercel.app/'
+    },
+    {
+      id: 4,
       name: 'Harmon-Ia',
       img: [HarmonHome, HarmonSearch],
       description:
@@ -62,7 +103,7 @@ export const Projects_EN = {
       url: 'https://harmon-ia.vercel.app/'
     },
     {
-      id: 1,
+      id: 5,
       name: 'Nexus App',
       img: [NexusLanding, NexusHome, NexusDetail, NexusFrom],
       description:
@@ -70,7 +111,7 @@ export const Projects_EN = {
       url: 'https://nexus-pi-app.vercel.app/'
     },
     {
-      id: 2,
+      id: 6,
       name: 'Bait App',
       img: [
         BaitLanding1,
@@ -86,7 +127,7 @@ export const Projects_EN = {
       url: 'https://bait-one.vercel.app/'
     },
     {
-      id: 3,
+      id: 7,
       name: 'Weather App',
       img: [WeatherApp],
       description:
@@ -94,7 +135,7 @@ export const Projects_EN = {
       url: 'https://weather-app-wine-rho.vercel.app/'
     },
     {
-      id: 4,
+      id: 8,
       name: 'Gif Creator',
       img: [GifGen],
       description:
@@ -102,7 +143,7 @@ export const Projects_EN = {
       url: 'https://gif-creator.vercel.app/'
     },
     {
-      id: 5,
+      id: 9,
       name: '4Game',
       img: [Game],
       description:
